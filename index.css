@@ -1,0 +1,75 @@
+/* */
+nav:after {
+  content: "";
+  clear: both;
+  display: block; }
+
+/* */
+body {
+  margin: 0px; }
+
+nav {
+  width: 100%;
+  border: none;
+  margin-top: 3em; }
+  nav h1 {
+    margin: 0;
+    float: left;
+    padding-top: 15px; }
+  nav ul {
+    float: right;
+    margin: 0; }
+    nav ul li {
+      display: inline-block;
+      margin-top: 15px;
+      padding-left: 35px; }
+      nav ul li:first-child {
+        padding-left: 0; }
+      nav ul li a {
+        font-size: 4rem;
+        color: #61B6DB;
+        text-decoration: none; }
+        nav ul li a:hover {
+          color: #f6d678; }
+
+main {
+  margin-top: 5em;
+  margin-right: 1em; }
+  main table {
+    width: 100%;
+    max-width: 100%; }
+    main table tbody {
+      width: 100%;
+      max-width: 100%; }
+  main td {
+    min-width: 40px;
+    min-height: 40px;
+    background: #ffffc6;
+    padding: 0;
+    border: 0;
+    transition: background 0.1s ease-in; }
+    main td:hover {
+      background: cornflowerblue;
+      transition: none; }
+    main td[data-wall="true"] {
+      background: darkgray;
+      transition: none; }
+    main td[data-path="true"] {
+      background: orange; }
+    main td[data-current="true"] {
+      background: #4d85ea; }
+  main .controls #controls-infos-success,
+  main .controls #controls-infos-failed {
+    display: none; }
+  main .controls button {
+    line-height: 30px;
+    margin-top: 2em; }
+  main .controls h5 {
+    margin-top: 1.5em;
+    margin-bottom: 0.3em; }
+    main .controls h5:nth-of-type(1) {
+      margin-top: 0; }
+  main .controls hr {
+    margin-top: 0em; }
+
+/*# sourceMappingURL=index.css.map */

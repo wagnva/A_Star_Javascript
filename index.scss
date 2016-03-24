@@ -1,0 +1,109 @@
+// http://www.colourlovers.com/palette/4140004/Milotic
+
+/* */
+
+%clearfix:after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* */
+
+body{
+    margin: 0px;
+}
+
+nav{
+    @extend %clearfix;
+    width: 100%;
+    border: none;
+    margin-top: 3em;
+    h1{
+        margin: 0;
+        float: left;
+        padding-top: 15px;
+    }
+    ul{
+        float: right;
+        margin: 0;
+        li{
+            display: inline-block;
+            margin-top: 15px;
+            padding-left: 35px;
+            &:first-child{
+                padding-left: 0;
+            }
+            a{
+                font-size: 4rem;
+                color: #61B6DB;
+                text-decoration: none;
+                &:hover{
+                    color: darken(#FBECC0, 15);
+                }
+            }
+        }
+    }
+}
+
+main{
+    margin-top: 5em;
+    margin-right: 1em;
+    table{
+        width: 100%;
+        max-width: 100%;
+        tbody{
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+    td{
+        min-width: 40px;
+        min-height: 40px;
+        background: darken(lightyellow, 5);
+        padding: 0;
+        border: 0;
+        transition: background 0.1s ease-in;
+        &:hover{
+            background: cornflowerblue;
+            transition: none;
+        }
+        
+        &[data-wall="true"]{
+            background: darkgray;
+            transition: none;
+        }
+        
+        &[data-path="true"]{
+            background: orange;
+        }
+        
+        &[data-current="true"]{
+            background: darken(cornflowerblue, 5);
+        }
+    }
+    
+    .controls{
+        
+        #controls-infos-success,
+        #controls-infos-failed{
+            display: none;
+        }
+        
+        button{
+            line-height: 30px;
+            margin-top: 2em;
+        }
+        
+        h5{
+            margin-top: 1.5em;
+            margin-bottom: 0.3em;
+            &:nth-of-type(1){
+                margin-top: 0;
+            }
+        }
+        hr{
+            margin-top: 0em;
+        }
+    }
+}

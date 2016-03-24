@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>A* Algorithm Test</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    
+<nav>
+   <div class="container">
+        <h1>A* Algorithm Test</h1>
+        <ul>
+            <li><a href="">Blogpost</a></li>
+            <li><a href="">Source</a></li>
+        </ul>
+    </div>
+</nav>
+    
+<main>
+    <div class="container">
+       <div class="two-thirds column">
+            <table>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+        <div class="one-third column controls">
+            <h5>Grid Options: </h5>
+            <hr>
+           
+            <label for="">Grid Size (maximal 100):</label>
+            <input type="text" class = "u-full-width" id="controls-gridsize" value="15">
+            
+            <label for="">Wall Frequency: </label>
+            <select name="" id="controls-frequency" class = "u-full-width">
+                <option value=".0">0%</option>
+                <option value=".1">10%</option>
+                <option value=".2">20%</option>
+                <option value=".3">30%</option>
+                <option value=".4">40%</option>
+            </select>
+            
+            <button class = "button-primary" id="controls-generate">Generate new Grid</button>
+            
+            <h5>Algorithm Options: </h5>
+            <hr>
+            
+            <input type="checkbox" id="controls-diagonal"> Allow Diagonal Movement <br>
+            <input type="checkbox" id="controls-displaymode"> Switch Display Mode <br>
+            
+            <h5>Algorithm Infos: </h5>
+            <hr>
+            
+            <span id="controls-infos-success">
+                Path was found (ms: <span></span>)
+            </span>
+            
+            <span id="controls-infos-failed">
+                No Path could be found
+            </span>
+            
+        </div>
+    </div>
+</main>
+    
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script src="algorithm.js"></script>
+    <script src="controller.js"></script>
+</body>
+</html>
